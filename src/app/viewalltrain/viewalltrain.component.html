@@ -1,3 +1,33 @@
-<p>Hi {{name}}</p>
-<input type="text" class="form-control" value="{{name}}" name="name" [(ngModel)]="name">
-<button class="btn btn-success" [disabled]="status" (click)="readValues()">Submit</button>
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">S.NO</th>
+                    <th scope="col">Station Code</th>
+                    <th scope="col">Station Name</th>
+                    <th scope="col">Arrival Time</th>
+                    <th scope="col">Departure Time</th>
+                    <th scope="col">Distance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of viewtrain.Route">
+                    <td>{{i.SerialNo}}</td>
+                    <td>{{i.StationCode}}</td>
+                    <td>{{i.StationName}}</td>
+                     <td>{{i.StationName}}</td>
+                    <td>{{i.ArrivalTime}}</td>
+                    <td>{{i.DepartureTime}}</td>
+                    <td>{{i.Distance}}</td>
+
+
+
+                  </tr>
+              </table>
+                    
+                </div>
+                </div>
+                </div>
+                
